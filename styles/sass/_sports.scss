@@ -2,6 +2,14 @@
 @use 'variables' as v;
 
 
+.cartas_sports img {
+    max-height: 130px;
+}
+
+.juego_mundos_sports img {
+    max-height: 130px;
+}
+
 .mundo1_s {
     width: 38%;
     background-image: url(../images/sports/fifa.jpg);

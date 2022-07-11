@@ -132,6 +132,14 @@ a {
   background-position: center;
 }
 
+.cartas_tv img {
+  max-height: 130px;
+}
+
+.juego_mundos_tv img {
+  max-height: 130px;
+}
+
 .mundo1_tv {
   width: 38%;
   background-image: url(../images/tv/breakingbadletras.jpg);
@@ -148,6 +156,14 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.cartas_sports img {
+  max-height: 130px;
+}
+
+.juego_mundos_sports img {
+  max-height: 130px;
 }
 
 .mundo1_s {
