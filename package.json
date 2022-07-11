@@ -1,0 +1,20 @@
+{
+  "name": "puzzle",
+  "version": "0.0.1",
+  "description": "Puzzle Project",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israiqu/Puzzle-Project.git"
+  },
+  "author": "Israel Munguia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israiqu/Puzzle-Project/issues"
+  },
+  "homepage": "https://github.com/israiqu/Puzzle-Project#readme"
+}
