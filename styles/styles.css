@@ -38,7 +38,7 @@ a {
 }
 
 .juego {
-  height: 1200px;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -50,6 +50,17 @@ a {
   height: 10%;
   padding: 0px 0px 10px 0px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.title_sub {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
 
 .juego_cartas {
@@ -119,6 +130,67 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.mundo1_tv {
+  width: 38%;
+  background-image: url(../images/tv/breakingbadletras.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mundo2_tv {
+  width: 38%;
+  height: 100%;
+  background-image: url(../images/tv/GOTletras.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mundo1_s {
+  width: 38%;
+  background-image: url(../images/sports/fifa.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mundo2_s {
+  width: 38%;
+  height: 100%;
+  background-image: url(../images/sports/nba.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 200px;
+}
+
+.home_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+}
+
+#img {
+  transition: all 0.4s;
+}
+
+#img:hover {
+  transform: translatey(-5px);
 }
 
 /*# sourceMappingURL=styles.css.map */

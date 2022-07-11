@@ -1,0 +1,21 @@
+@use 'config';
+@use 'variables' as v;
+
+
+.mundo1_s {
+    width: 38%;
+    background-image: url(../images/sports/fifa.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.mundo2_s {
+    width: 38%;
+    height: 100%;
+    background-image: url(../images/sports/nba.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}

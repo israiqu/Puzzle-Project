@@ -1,0 +1,20 @@
+@use 'config';
+@use 'variables' as v;
+
+.mundo1_tv {
+    width: 38%;
+    background-image: url(../images/tv/breakingbadletras.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.mundo2_tv {
+    width: 38%;
+    height: 100%;
+    background-image: url(../images/tv/GOTletras.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}

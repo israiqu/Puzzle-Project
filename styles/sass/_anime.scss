@@ -1,9 +1,8 @@
 @use 'config';
 @use 'variables' as v;
-@use 'mixin';
 
 .juego {
-    height: 1200px;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,6 +14,17 @@
     height: 10%;
     padding: 0px 0px 10px 0px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title_sub {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
 }
 
 .juego_cartas {

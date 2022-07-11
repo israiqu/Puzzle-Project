@@ -1,32 +1,27 @@
-    const parrafos = document.querySelectorAll(".parrafo");
+    const imagenes = document.querySelectorAll(".imagen");
     const secciones = document.querySelectorAll(".seccion");
 
-    parrafos.forEach((parrafo) => {
-    parrafo.addEventListener("dragstart", (event) => {
-        console.log("Estoy arrastrando el párrafo: " + parrafo.innerText);
-        parrafo.classList.add("dragging");
-        event.dataTransfer.setData("id", parrafo.id);
+    imagenes.forEach((imagen) => {
+    imagen.addEventListener("dragstart", (event) => {
+        imagen.classList.add("dragging");
+        event.dataTransfer.setData("id", imagen.id);
     });
 
-    parrafo.addEventListener("dragend", () => {
-        // console.log("He terminado de arrastrar")
-        parrafo.classList.remove("dragging");
+    imagen.addEventListener("dragend", () => {
+        imagen.classList.remove("dragging");
     });
     });
 
     secciones.forEach((seccion) => {
     seccion.addEventListener("dragover", (event) => {
         event.preventDefault();
-        event.dataTransfer.dropEffect = "move"; // copy por defecto
-        // console.log("Drag Over")
+        event.dataTransfer.dropEffect = "move";
     });
 
     seccion.addEventListener("drop", (event) => {
-        console.log("Drop");
-        const id_parrafo = event.dataTransfer.getData("id");
-        // console.log("Párrafo id: ", id_parrafo)
-        const parrafo = document.getElementById(id_parrafo);
-        seccion.appendChild(parrafo);
+        const id_imagen = event.dataTransfer.getData("id");
+        const imagen = document.getElementById(id_imagen);
+        seccion.appendChild(imagen);
     });
     });
 
@@ -38,6 +33,6 @@
     });
 
     papelera.addEventListener("drop", (event) => {
-    const id_parrafo = event.dataTransfer.getData("id");
-    document.getElementById(id_parrafo).remove();
+    const id_imagen = event.dataTransfer.getData("id");
+    document.getElementById(id_imagen).remove();
     });
